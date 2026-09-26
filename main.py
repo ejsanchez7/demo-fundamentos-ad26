@@ -1,12 +1,15 @@
 from math import pi
 
 # Operación para convertir kilómetros a millas
-km = float(input("Escribe los kilómetros:"))
-millas = km / 1.609
+def convertir_km_millas(km) :
+    return km / 1.609
 
 # Operación para convertir grados a radianes
-grados = float(input("Escribe los grados:"))
-radianes = grados * pi / 180
+def convertir_grados_radianes(grados) :
+    return grados * pi / 180
 
-print(millas)
-print(radianes)
+km = float(input("Escribe los kilómetros:"))
+grados = float(input("Escribe los grados:"))
+
+print(convertir_km_millas(km))
+print(convertir_grados_radianes(grados))
